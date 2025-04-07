@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+     "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["vite/client"],
     "allowJs": false,
@@ -8,7 +12,7 @@
     "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "exactOptionalPropertyTypes": true,
@@ -21,7 +25,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "vite.config.ts"],
   "references": [
     {
       "path": "./tsconfig.vite.json",
