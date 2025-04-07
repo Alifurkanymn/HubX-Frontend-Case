@@ -1,0 +1,7 @@
+.btn {
+  @apply text-sm lg:text-base font-normal px-4 lg:px-6 py-2.5 lg:py-3 transition-colors duration-300 cursor-pointer;
+}
+
+.btn-primary {
+  @apply text-black hover:text-white bg-transparent hover:bg-black border border-gray-300;
+}
