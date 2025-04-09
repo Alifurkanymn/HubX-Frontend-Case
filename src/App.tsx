@@ -1,11 +1,14 @@
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import Home from "./pages/Home";
 
 
 export function App() {
   return (
-    <>
-      <header>
-        <h1>HubX Frontend Assignment</h1>
-      </header>
-    </>
-  );
+    <div className="min-h-screen flex flex-col justify-between">
+      <Header />
+      <Home />
+      <Footer />
+    </div>
+  )
 }

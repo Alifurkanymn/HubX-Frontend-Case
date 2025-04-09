@@ -1,0 +1,37 @@
+.circle-progress {
+  stroke-dasharray: 170;
+  stroke-dashoffset: 0;
+  width: 56px !important;
+  height: 56px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg) scaleY(-1);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+[data-state="active"] .circle-progress {
+  stroke-dashoffset: 170;
+  opacity: 1;
+  animation: offsettozero 0.5s linear forwards;
+}
+
+@keyframes offsettozero {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.circle-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+[data-state="active"] .circle-img {
+  filter: invert(33%) sepia(100%) saturate(700%) hue-rotate(190deg);
+}
