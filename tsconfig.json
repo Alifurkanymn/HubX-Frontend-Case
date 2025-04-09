@@ -6,7 +6,7 @@
       "@/*": ["./src/*"]
     },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client", "vite-plugin-svgr/client"],
+    "types": ["node"],
     "allowJs": false,
     "strict": true,
     "useDefineForClassFields": true,
@@ -25,7 +25,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
   },
-  "include": ["**/*.ts", "**/*.tsx", "vite.config.ts"],
+  "include": ["src", "**/*.tsx", "declaration.d.ts"],
   "references": [
     {
       "path": "./tsconfig.vite.json",

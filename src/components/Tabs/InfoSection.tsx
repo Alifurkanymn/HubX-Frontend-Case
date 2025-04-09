@@ -24,7 +24,7 @@ const InfoSection = ({ title, subTitle, description, buttonText, onButtonClick }
             <Title title={title} />
             <SubTitle subTitle={subTitle} />
             <Description description={description} />
-            <OutlineButton onClick={onButtonClick}>
+            <OutlineButton onClick={onButtonClick!}>
                 {buttonText}
             </OutlineButton>
         </motion.div>

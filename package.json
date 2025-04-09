@@ -19,7 +19,6 @@
     "@radix-ui/react-slot": "^1.2.0",
     "@radix-ui/react-tabs": "^1.1.3",
     "@shadcn/ui": "^0.0.4",
-    "@tailwindcss/vite": "^4.1.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
@@ -32,6 +31,8 @@
     "tw-animate-css": "^1.2.5"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.3",
+    "@types/node": "^22.14.0",
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
@@ -44,9 +45,11 @@
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.2.4",
+    "rollup": "^3.29.5",
     "stylelint": "^15.10.2",
     "stylelint-config-clean-order": "^5.0.1",
     "stylelint-config-standard": "^34.0.0",
+    "svgo": "^3.3.2",
     "typescript": "^5.8.3",
     "vite": "^6.2.5",
     "vite-plugin-svgr": "^4.3.0"
